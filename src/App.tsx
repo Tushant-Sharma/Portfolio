@@ -1,14 +1,25 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
+import "bootstrap/scss/bootstrap.scss"
+import './index.css'
+import { Suspense } from "react"
+import { Route, Routes } from "react-router-dom"
+import { publicRoutes } from "./components/routers"
+import { HomeLayout } from "./components/pagelayout"
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>Welcome Tushant Sharma</h1>
+      <Suspense>
+        <Routes>
+          <Route path="/" element={<HomeLayout/>}>
+            {
+              publicRoutes.map((route) => (
+                <Route key={route.title} path={route.path} element={route.element} />
+              ))
+            }
+          </Route>
+        </Routes>
+      </Suspense>
+
     </>
   )
 }
