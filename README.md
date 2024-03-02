@@ -19,6 +19,6 @@ Feel free to connect with me on E-mail [info.tushantsharma.com]() or follow me o
 
 [portfolio-ten-steel-14.vercel.app](https://portfolio-ten-steel-14.vercel.app)
 
-[portfolio-git-main-tushantsharma0987-gmailcom.vercel.app](portfolio-git-main-tushantsharma0987-gmailcom.vercel.app)
+[portfolio-git-main-tushantsharma0987-gmailcom.vercel.app](https://portfolio-git-main-tushantsharma0987-gmailcom.vercel.app)
 
-[portfolio-hfc2eoq49-tushantsharma0987-gmailcom.vercel.app](portfolio-hfc2eoq49-tushantsharma0987-gmailcom.vercel.app)
+[portfolio-hfc2eoq49-tushantsharma0987-gmailcom.vercel.app](https://portfolio-hfc2eoq49-tushantsharma0987-gmailcom.vercel.app)
