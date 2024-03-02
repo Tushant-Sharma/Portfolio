@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+<h1 align='center'>👋 Hey It's Me Tushant Sharma </h1> 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I'm professional web developer with more than two year of experience.and i Specialized in developing
+Web-Applications using ***React Js  , Node Js , SQL Server, Postgress***. Ability to understand business requirements & translate them into technical
+requirements.
 
-Currently, two official plugins are available:
+### 📫 How to Reach Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [LinkedIn](www.linkedin.com/in/tushant-sharma)
+- [GitHub]()
+- [info.tushant@gmail.com]()
+  
+### 📌 Connect with Me
 
-## Expanding the ESLint configuration
+Feel free to connect with me on E-mail [info.tushantsharma.com]() or follow me on [GitHub](your-github-url) to stay updated on my projects.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+##  Feel Free To Explore My Portfolio Website.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+[portfolio-ten-steel-14.vercel.app](https://portfolio-ten-steel-14.vercel.app)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[portfolio-git-main-tushantsharma0987-gmailcom.vercel.app](portfolio-git-main-tushantsharma0987-gmailcom.vercel.app)
+
+[portfolio-hfc2eoq49-tushantsharma0987-gmailcom.vercel.app](portfolio-hfc2eoq49-tushantsharma0987-gmailcom.vercel.app)
