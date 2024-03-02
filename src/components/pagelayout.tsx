@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, Outlet } from "react-router-dom"
+import { Link, NavLink, Outlet } from "react-router-dom"
 const Header = () => {
 
     return (
@@ -7,23 +7,21 @@ const Header = () => {
             <div className="header-area">
                 <div className="container">
                     <div className="gx-row d-flex align-items-center justify-content-between">
-                        <a href="index.html" className="logo">
+                        <Link to="/home" className="logo">
                             <h1 className="title">TS</h1>
                             {/* <img src="../src/assets/images/logo.svg" alt="Logo" /> */}
-                        </a>
+                        </Link>
 
                         <nav className="navbar">
                             <ul className="menu">
-                                <li><Link to="home">Home</Link></li>
-                                <li><Link to="about">About </Link></li>
-                                <li><Link to="work">Work</Link></li>
-                                <li><Link to="contact">Contact</Link></li>
+                                <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="home">Home</NavLink></li>
+                                <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="about">About</NavLink></li>
+                                <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="project">Work</NavLink></li>
+                                <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="contact">Contact</NavLink></li>
                             </ul>
-                            <a href="contact.html" className="theme-btn">Let's talk</a>
+                            <Link to="contact" className="theme-btn">Let's talk</Link>
                         </nav>
-
-                        <a href="contact.html" className="theme-btn">Let's talk</a>
-
+                        <Link to="contact" className="theme-btn">Let's talk</Link>
                         <div className="show-menu">
                             <span></span>
                             <span></span>
@@ -41,20 +39,18 @@ const Footer = () => {
         <footer className="footer-area">
             <div className="container">
                 <div className="footer-content text-center">
-                    <a href="index.html" className="logo">
+                    <Link to="/home" className="logo">
                         <h1 className="title">TS</h1>
                         {/* <img src="../src/assets/images/logo.svg" alt="Logo" /> */}
-                    </a>
+                    </Link>
                     <ul className="footer-menu">
                         <li><Link to="home">Home</Link></li>
                         <li><Link to="about">About </Link></li>
                         <li><Link to="work">Work</Link></li>
                         <li><Link to="contact">Contact</Link></li>
-
-
                     </ul>
                     <p className="copyright">
-                        &copy; All rights reserved by <span>WordPress River</span>
+                        &copy; All rights reserved by <span>Tushant Sharma</span>
                     </p>
                 </div>
             </div>

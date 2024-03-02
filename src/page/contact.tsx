@@ -1,3 +1,5 @@
+import { Dribbble, Instagram, Mail, PhoneCall, Twitter } from "lucide-react"
+
 const Contact: React.FC = () => {
     return (
         <>
@@ -9,7 +11,7 @@ const Contact: React.FC = () => {
                             <ul className="contact-details">
                                 <li className="d-flex align-items-center aos-init aos-animate" data-aos="zoom-in">
                                     <div className="icon-box shadow-box">
-                                        <i className="iconoir-mail"></i>
+                                        <Mail className="iconoir-mail"></Mail>
                                     </div>
                                     <div className="right">
                                         <span>MAIL us</span>
@@ -20,7 +22,7 @@ const Contact: React.FC = () => {
 
                                 <li className="d-flex align-items-center aos-init aos-animate" data-aos="zoom-in">
                                     <div className="icon-box shadow-box">
-                                        <i className="iconoir-phone"></i>
+                                    <PhoneCall className="iconoir-phone"></PhoneCall>
                                     </div>
                                     <div className="right">
                                         <span>Contact Us</span>
@@ -31,18 +33,18 @@ const Contact: React.FC = () => {
 
                             <h3 data-aos="fade-up" className="aos-init aos-animate">Social Info</h3>
                             <ul className="social-links d-flex align-center aos-init aos-animate" data-aos="zoom-in">
-                                <li><a className="shadow-box" href="#"><i className="iconoir-dribbble"></i></a></li>
-                                <li><a className="shadow-box" href="#"><i className="iconoir-twitter"></i></a></li>
-                                <li><a className="shadow-box" href="#"><i className="iconoir-instagram"></i></a></li>
+                                <li><a className="shadow-box" href="#"><Dribbble className="iconoir-dribbble"></Dribbble></a></li>
+                                <li><a className="shadow-box" href="#"><Twitter className="iconoir-twitter"></Twitter></a></li>
+                                <li><a className="shadow-box" href="#"><Instagram className="iconoir-instagram"></Instagram></a></li>
                             </ul>
                         </div>
 
                         <div data-aos="zoom-in" className="contact-form aos-init aos-animate">
                             <div className="shadow-box">
-                                <img src="../src/assets/images/bg1.png" alt="BG" className="bg-img" />
-                                <img src="../src/assets/images/icon3.png" alt="Icon" />
+                                <img src="images/bg1.png" alt="BG" className="bg-img" />
+                                <img src="images/icon3.png" alt="Icon" />
                                 <h1>Let’s work <span>together.</span></h1>
-                                <form method="POST">
+                                <form >
                                     <div className="alert alert-success messenger-box-contact__msg" style={{ display: "none" }} role="alert">
                                         Your message was sent successfully.
                                     </div>

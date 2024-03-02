@@ -1,5 +1,10 @@
+import { Aboutme } from "../page/about";
 import { Contact } from "../page/contact";
+import { Error_page } from "../page/error";
 import { Home } from "../page/home";
+import { Portfolio } from "../page/portfolio";
+import { Service } from "../page/service";
+import { CommingSoon } from "../page/wait";
 
 interface IPublicRoutes {
     path: string,
@@ -20,8 +25,13 @@ const publicRoutes: IPublicRoutes[] = [
         title: "Home"
     },
     {
+        path: "about",
+        element: <Aboutme />,
+        title: "About Me"
+    },
+    {
         path: "profile",
-        element: <Home />,
+        element: <Portfolio />,
         title: "Contact"
     },
     {
@@ -31,12 +41,17 @@ const publicRoutes: IPublicRoutes[] = [
     },
     {
         path: "project",
-        element: <Home />,
+        element: <CommingSoon />,
         title: "Project Comming Soon.."
     },
     {
+        path: "service",
+        element: <Service />,
+        title: "Service"
+    },
+    {
         path: "*",
-        element: <Home />,
+        element: <Error_page />,
         title: "Error 404"
     }
 ]
