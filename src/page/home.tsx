@@ -1,4 +1,4 @@
-import { CameraIcon, Contact, Dribbble, Filter, Github, Linkedin, Mail, Monitor, NotepadTextDashed, Pencil, Phone, RepeatIcon, Settings, Settings2, TextSearch } from "lucide-react"
+import {  Github, Linkedin, Monitor, Settings, Settings2, TextSearch } from "lucide-react"
 import { Link } from "react-router-dom"
 
 const Home = () => {
