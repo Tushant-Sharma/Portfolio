@@ -621,7 +621,7 @@ ol {
   height: 224px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(90deg, #3C58E3 -15%, #C2EBFF 58%, #5AB5E2 97%);
+  background: linear-gradient(90deg, #2e4f60 -15%, #C2EBFF 58%, #1e3548 97%);
   border-radius: 30px 0 30px 0;
   flex: none;
 }
@@ -718,7 +718,7 @@ ol {
 }
 
 .about-area .about-image-box .image-inner {
-  background: linear-gradient(90deg, #3C58E3 -15%, #C2EBFF 58%, #5AB5E2 97%);
+  background:linear-gradient(90deg, #262626 -15%, #abb5bb 58%, #191919 97%);
   border-radius: 30px;
 }
 
@@ -1083,7 +1083,7 @@ ol {
   height: 50px;
   border-radius: 50%;
   display: block;
-  line-height: 55px;
+  line-height: 44px;
   color: #fff;
   font-size: 20px;
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -1693,7 +1693,7 @@ ol {
   border-radius: 10px;
   flex: none;
   text-align: center;
-  line-height: 75px;
+  line-height: 65px;
   font-size: 30px;
   color: #ffffff;
 }
@@ -1734,10 +1734,10 @@ ol {
   height: 82px;
   display: block;
   text-align: center;
-  line-height: 92px;
+  line-height: 80px;
   color: #ffffff;
   border-radius: 50%;
-  font-size: 32px;
+  font-size: 42px;
   transition: .3s;
 }
 
@@ -2236,14 +2236,14 @@ ol {
   .contact-area .social-links li a {
     width: 50px;
     height: 50px;
-    line-height: 58px;
+    line-height: 46px;
     font-size: 20px;
   }
 
   .contact-area .contact-infos .contact-details li .icon-box {
     width: 58px;
     height: 58px;
-    line-height: 63px;
+    line-height: 55px;
     font-size: 25px;
   }
 

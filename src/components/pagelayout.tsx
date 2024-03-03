@@ -1,6 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, NavLink, Outlet } from "react-router-dom"
 const Header = () => {
+
+    const [nav, setNav] = useState<boolean>(false);
+
+    const showNavBar = () => {
+        if (nav) { setNav(false) }
+        else setNav(true)
+    }
+
+    const hideNavBar = () => {
+        setNav(false);
+    }
 
     return (
         <>
@@ -12,17 +23,17 @@ const Header = () => {
                             {/* <img src="../src/assets/images/logo.svg" alt="Logo" /> */}
                         </Link>
 
-                        <nav className="navbar">
+                        <nav className={nav == true ? " navbar active" : "navbar"}>
                             <ul className="menu">
-                                <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="home">Home</NavLink></li>
-                                <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="about">About</NavLink></li>
-                                <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="project">Work</NavLink></li>
-                                <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="contact">Contact</NavLink></li>
+                                <li><NavLink onClick={hideNavBar} className={({ isActive }) => (isActive ? 'active' : '')} to="home">Home</NavLink></li>
+                                <li><NavLink onClick={hideNavBar} className={({ isActive }) => (isActive ? 'active' : '')} to="about">About</NavLink></li>
+                                <li><NavLink onClick={hideNavBar} className={({ isActive }) => (isActive ? 'active' : '')} to="project">Work</NavLink></li>
+                                <li><NavLink onClick={hideNavBar} className={({ isActive }) => (isActive ? 'active' : '')} to="contact">Contact</NavLink></li>
                             </ul>
-                            <Link to="contact" className="theme-btn">Let's talk</Link>
+                            <Link to="contact" onClick={showNavBar} className="theme-btn">Let's talk</Link>
                         </nav>
                         <Link to="contact" className="theme-btn">Let's talk</Link>
-                        <div className="show-menu">
+                        <div onClick={showNavBar} className={nav == true ? "show-menu active" : "show-menu"}>
                             <span></span>
                             <span></span>
                             <span></span>

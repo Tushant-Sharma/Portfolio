@@ -11,7 +11,7 @@ const Error_page: React.FC = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="about-me-box shadow-box">
-                                <a className="overlay-link" href="/about"></a>
+                                <Link className="overlay-link" to="/"></Link>
                                 <div className="infos"><h1>404 Page Not Found</h1>
                                     <Link to="/">Go Back</Link>
                                     <Link className="about-btn" to="/">

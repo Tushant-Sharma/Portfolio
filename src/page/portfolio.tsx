@@ -1,3 +1,6 @@
+import {  Github, Instagram, Mail, PhoneCall } from "lucide-react"
+import { Link } from "react-router-dom"
+
 const Portfolio: React.FC = () => {
     return (
         <>
@@ -7,21 +10,21 @@ const Portfolio: React.FC = () => {
                         <div className="credential-sidebar-wrap aos-init aos-animate" data-aos="zoom-in">
                             <div className="credential-sidebar text-center">
                                 <div className="shadow-box">
-                                    <img src="images/bg1.png" alt="BG" className="bg-img"/>
-                                        <div className="img-box">
-                                            <img src="images/me.png" alt="About Me"/>
-                                        </div>
-                                        <h2>Tushant Sharma</h2>
-                                        <p>@tushant-sharma</p>
+                                    <img src="images/bg1.png" alt="BG" className="bg-img" />
+                                    <div className="img-box">
+                                        <img src="images/me.png" alt="About Me" />
+                                    </div>
+                                    <h2>Tushant Sharma</h2>
+                                    <p>@tushant-sharma</p>
 
-                                        <ul className="social-links d-flex justify-content-center">
-                                            <li><a href="#"><i className="iconoir-dribbble"></i></a></li>
-                                            <li><a href="#"><i className="iconoir-twitter"></i></a></li>
-                                            <li><a href="#"><i className="iconoir-instagram"></i></a></li>
-                                            <li><a href="#"><i className="iconoir-facebook-tag"></i></a></li>
-                                        </ul>
+                                    <ul className="social-links d-flex justify-content-center">
+                                        <li><Link to="/#"><Github className="iconoir-dribbble"/></Link></li>
+                                        <li><Link to="/#"><Mail className="iconoir-facebook-tag"/></Link></li>
+                                        <li><Link to="/#"><Instagram className="iconoir-instagram"/></Link></li>
+                                        <li><Link to="/#"><PhoneCall className="iconoir-twitter"/></Link></li>
+                                    </ul>
 
-                                        <a href="contact.html" className="theme-btn">Contact Me</a>
+                                    <Link to="/contact.html" className="theme-btn">Contact Me</Link>
                                 </div>
                             </div>
                         </div>
@@ -144,4 +147,4 @@ const Portfolio: React.FC = () => {
     )
 }
 
-export {Portfolio}
+export { Portfolio }

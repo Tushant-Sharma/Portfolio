@@ -51,7 +51,7 @@ const publicRoutes: IPublicRoutes[] = [
     },
     {
         path: "*",
-        element: <Error_page />,
+        element: <CommingSoon />,
         title: "Error 404"
     }
 ]

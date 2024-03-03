@@ -136,10 +136,10 @@ const Home = () => {
                             <div className="about-profile-box info-box shadow-box h-full">
                                 <img src="images/bg1.png" alt="BG" className="bg-img" />
                                 <div className="inner-profile-icons shadow-box">
-                                    <Link to="/#">
+                                    <Link to="/profile">
                                         <Github className="iconoir-dribbble"/>
                                     </Link>
-                                    <Link to="/#">
+                                    <Link to="/profile">
                                         <Linkedin className="iconoir-twitter"/>
                                     </Link>
                                 </div>
@@ -149,7 +149,7 @@ const Home = () => {
                                         <h1>Profiles</h1>
                                     </div>
 
-                                    <Link to="/contact" className="about-btn">
+                                    <Link to="/about" className="about-btn">
                                         <img src="images/icon.svg" alt="Button" />
                                     </Link>
 
