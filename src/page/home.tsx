@@ -2,6 +2,7 @@ import {  Github, Linkedin, Monitor, Settings, Settings2, TextSearch } from "luc
 import { Link } from "react-router-dom"
 
 const Home = () => {
+   
     return (
         <>
             <div className="row">

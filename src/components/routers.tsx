@@ -1,9 +1,11 @@
+import { useLocation } from "react-router-dom";
 import { Aboutme } from "../page/about";
 import { Contact } from "../page/contact";
 import { Home } from "../page/home";
 import { Portfolio } from "../page/portfolio";
 import { Service } from "../page/service";
 import { CommingSoon } from "../page/wait";
+import { useEffect } from "react";
 
 interface IPublicRoutes {
     path: string,
@@ -55,4 +57,15 @@ const publicRoutes: IPublicRoutes[] = [
     }
 ]
 
-export { publicRoutes }
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  };
+
+
+export { publicRoutes, ScrollToTop }
