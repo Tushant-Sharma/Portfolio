@@ -1,6 +1,5 @@
 import { Aboutme } from "../page/about";
 import { Contact } from "../page/contact";
-import { Error_page } from "../page/error";
 import { Home } from "../page/home";
 import { Portfolio } from "../page/portfolio";
 import { Service } from "../page/service";
