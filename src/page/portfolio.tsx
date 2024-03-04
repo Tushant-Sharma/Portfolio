@@ -1,5 +1,6 @@
-import {  Github, Instagram, Mail, PhoneCall } from "lucide-react"
+import { Github, Linkedin, Mail, PhoneCall } from "lucide-react"
 import { Link } from "react-router-dom"
+import { socialLinks } from "../utils/usefulllink"
 
 const Portfolio: React.FC = () => {
     return (
@@ -15,16 +16,20 @@ const Portfolio: React.FC = () => {
                                         <img src="images/me.png" alt="About Me" />
                                     </div>
                                     <h2>Tushant Sharma</h2>
-                                    <p>@tushant-sharma</p>
+                                    <u>
+                                        <a target="_blank" href={socialLinks.github}>
+                                            <p>@tushant-sharma</p>
+                                        </a>
+                                    </u>
 
                                     <ul className="social-links d-flex justify-content-center">
-                                        <li><Link to="/#"><Github className="iconoir-dribbble"/></Link></li>
-                                        <li><Link to="/#"><Mail className="iconoir-facebook-tag"/></Link></li>
-                                        <li><Link to="/#"><Instagram className="iconoir-instagram"/></Link></li>
-                                        <li><Link to="/#"><PhoneCall className="iconoir-twitter"/></Link></li>
+                                        <li><a target="_blank" href={socialLinks.github}><Github className="iconoir-dribbble" /></a></li>
+                                        <li><a href={socialLinks.email}><Mail className="iconoir-facebook-tag" /></a></li>
+                                        <li><a target="_blank" href={socialLinks.linkedIn}><Linkedin className="iconoir-instagram" /></a></li>
+                                        <li><a target="_blank" href={socialLinks.whatsapp}><PhoneCall className="iconoir-twitter" /></a></li>
                                     </ul>
 
-                                    <Link to="/contact.html" className="theme-btn">Contact Me</Link>
+                                    <Link to={socialLinks.email} className="theme-btn">Contact Me</Link>
                                 </div>
                             </div>
                         </div>
@@ -32,8 +37,10 @@ const Portfolio: React.FC = () => {
                         <div className="credential-content flex-1">
                             <div className="credential-about aos-init aos-animate" data-aos="zoom-in">
                                 <h2>About Me</h2>
-                                <p>Dynamic and Results-Oriented Web Developer with a strong foundation in React JS, Redux, and C# ASP.NET, Tushant Sharma is a Junior Web Developer with a proven track record in leading web application development projects. Throughout a two-year tenure at RSG IT Solution Pvt. Ltd., T</p>
-                                <p>With a deep understanding of programming languages and web technologies, Tushant is well-equipped to tackle new challenges and deliver high-quality web solutions. His experience spans across various domains, including web application development, data manipulation, and the use of REST APIs, making him a valuable asset for any team aiming to improve web application performance and user satisfaction.</p>
+                                <p> I'm a Jr. Web Developer based in India, on a mission to craft digital experiences . I've delved deep into the realm of web development, armed with a passion for crafting immersive digital experiences. With hands-on experience in React JS, Redux , Node JS, Postgress (RDBSM) and ASP .NET, I've honed my skills in building user-centric web applications that leave a lasting impression.
+
+                                </p>
+                                <p>I specialize in building user-friendly web applications with excellent features of admin pannel that make a difference. From creating seamless booking systems for hotels to crafting efficient Bulk Mailing Web Apps, I'm dedicated to pushing the boundaries of web development. </p>
                             </div>
 
                             <div className="credential-edc-exp credential-experience">
@@ -42,12 +49,23 @@ const Portfolio: React.FC = () => {
 
                                     <h3>Hotel Management Project </h3>
                                     <h5>User-Friendly Desgin with Robust and Daynamic Features </h5>
-                                    <p>- Designing a user-friendly booking interface allowing guests to check room availability, make
+                                    <p>
+                                        - Designing a user-friendly booking interface allowing guests to check room availability, make
                                         reservations, and view booking details.
+                                    </p>
+                                    <br />
+                                    <p>
                                         - Implementing systems to manage room reservations, including functionalities like booking,
                                         modification, and cancellation of bookings.
+                                    </p>
+
+                                    <br />
+                                    <p>
                                         - Admin Dashboard : Creating tools for administrators to manage bookings, room availability,
                                         pricing, and user accounts.
+                                    </p>
+                                    <br />
+                                    <p>
                                         - User Dashboard : Providing users with a dashboard to manage their bookings, preferences, and
                                         account details as well as Displaying users' booking history, allowing them to view past
                                         reservations and upcoming stays.</p>
@@ -75,66 +93,68 @@ const Portfolio: React.FC = () => {
                                 <div className="credential-edc-exp-item aos-init aos-animate" data-aos="zoom-in">
                                     <h4>2023-present</h4>
                                     <h3>Master Degree in Computer Application (AI, Data Analytics)</h3>
-                                    <h5>Chandighar University Chandighar</h5>
-                                    <p>Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.</p>
+                                    <h5>Chandigarh University,Punjab</h5>
+                                    <p>MCA with specialisation in Artificial Intelligence and Machine Learning.industry ready skills to develop intelligent machines and solve real world problem through Artificial Intelligence and Machine Learning software and techniques.</p>
                                 </div>
 
                                 <div className="credential-edc-exp-item aos-init aos-animate" data-aos="zoom-in">
                                     <h4>2019 - 2022</h4>
                                     <h3>Bachelor Degree in Commerce</h3>
                                     <h5>Kurukshetra University Kurukshetra , Haryana</h5>
-                                    <p>Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.</p>
                                 </div></div>
 
                             <div className="skills-wrap">
                                 <h2 data-aos="fade-up" className="aos-init aos-animate">Skills</h2>
                                 <div className="d-grid skill-items gap-24 flex-wrap">
                                     <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
-                                        <span className="percent">85%</span>
+                                        <span className="percent">89%</span>
                                         <h3 className="name">JavaScript</h3>
-                                        <p>Non enim praesent</p>
+                                        <p>web browser language</p>
+                                    </div>
+                                    <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
+                                        <span className="percent">90%</span>
+                                        <h3 className="name">HTML</h3>
+                                    </div>
+                                    <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
+                                        <span className="percent">75%</span>
+                                        <h3 className="name">Tailwind</h3>
+                                    </div>
+                                    <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
+                                        <span className="percent">95%</span>
+                                        <h3 className="name">React JS</h3>
+                                        <p>Frontend Framework / UI (user interface)</p>
+                                    </div>
+                                    <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
+                                        <span className="percent">90%</span>
+                                        <h3 className="name">Node JS</h3>
+                                        <p>REST API, Graphql</p>
+                                    </div>
+                                    <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
+                                        <span className="percent">82%</span>
+                                        <h3 className="name">Postgres / Microsoft SQL Server</h3>
+                                        <p>Relational data base management system or SQL</p>
                                     </div>
                                     <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
                                         <span className="percent">78%</span>
                                         <h3 className="name">Python</h3>
-                                        <p>Non enim praesent</p>
+                                        <p>REST API, Scrapy, FastApi</p>
                                     </div>
                                     <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
-                                        <span className="percent">92%</span>
-                                        <h3 className="name">Figma</h3>
-                                        <p>Non enim praesent</p>
-                                    </div>
-                                    <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
-                                        <span className="percent">90%</span>
-                                        <h3 className="name">WordPress</h3>
-                                        <p>Non enim praesent</p>
-                                    </div>
-                                    <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
-                                        <span className="percent">81%</span>
-                                        <h3 className="name">React</h3>
-                                        <p>Non enim praesent</p>
-                                    </div>
-                                    <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
-                                        <span className="percent">87%</span>
-                                        <h3 className="name">Adobe XD</h3>
-                                        <p>Non enim praesent</p>
+                                        <span className="percent">78%</span>
+                                        <h3 className="name">Asp .Net</h3>
+                                        <p>UI/REST API</p>
                                     </div>
 
                                 </div>
                             </div>
 
                             <div className="skills-wrap awards-wrap">
-                                <h2 data-aos="fade-up" className="aos-init aos-animate">Awards</h2>
+                                <h2 data-aos="fade-up" className="aos-init aos-animate">Language</h2>
                                 <div className="d-grid skill-items gap-24 flex-wrap">
                                     <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
-                                        <span className="percent">14 May 2020</span>
-                                        <h3 className="name">Bluebase</h3>
-                                        <p>Non enim praesent</p>
-                                    </div>
-                                    <div className="skill-item aos-init aos-animate" data-aos="zoom-in">
-                                        <span className="percent">26 June 2018</span>
-                                        <h3 className="name">Demble</h3>
-                                        <p>Non enim praesent</p>
+                                        {/* <span className="percent">14 May 2020</span> */}
+                                        <h3 className="name">English , Hindi</h3>
+                                        {/* <p>Non enim praesent</p> */}
                                     </div>
 
                                 </div>
