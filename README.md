@@ -18,7 +18,3 @@ Feel free to connect with me on E-mail [info.tushantsharma.com]() or follow me o
 ##  Feel Free To Explore My Portfolio Website.
 
 [tushant.vercel.app](https://tushant.vercel.app/)
-
-[portfolio-git-main-tushantsharma0987-gmailcom.vercel.app](https://portfolio-git-main-tushantsharma0987-gmailcom.vercel.app)
-
-[portfolio-hfc2eoq49-tushantsharma0987-gmailcom.vercel.app](https://portfolio-hfc2eoq49-tushantsharma0987-gmailcom.vercel.app)

@@ -1,5 +1,6 @@
+import { ArrowLeft } from "lucide-react";
 import React, { useState } from "react"
-import { Link, NavLink, Outlet } from "react-router-dom"
+import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom"
 const Header = () => {
 
     const [nav, setNav] = useState<boolean>(false);
@@ -12,16 +13,38 @@ const Header = () => {
     const hideNavBar = () => {
         setNav(false);
     }
+    const navLogo: React.CSSProperties = {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "30%"
+    }
+
+    const goBack = useNavigate()
+    const location = useLocation()
+    const canGoBack = window.history.length > 1 && location.pathname != '/';
+
+    console.log(canGoBack, location.pathname)
 
     return (
         <>
             <div className="header-area">
                 <div className="container">
                     <div className="gx-row d-flex align-items-center justify-content-between">
-                        <Link to="/home" className="logo">
-                            <h1 className="title">TS</h1>
+                        <div className="logo" style={navLogo}>
+                            {
+                                canGoBack && location.pathname !== '/home' ? <><span style={{ color: "#fff",cursor:"pointer", marginTop: "-9px", textDecoration: "overline" }} onClick={() => { goBack(-1) }} >
+
+                                    <ArrowLeft />
+                                </span>
+                                </> : <></>
+                            }
+
+                            <Link to="/">
+                                <h1 className="title">TS</h1>
+                            </Link>
                             {/* <img src="../src/assets/images/logo.svg" alt="Logo" /> */}
-                        </Link>
+                        </div>
 
                         <nav className={nav == true ? " navbar active" : "navbar"}>
                             <ul className="menu">

@@ -605,7 +605,7 @@ ol {
 
 /* # About */
 .about-area {
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 .about-area .about-me-box {
@@ -2041,6 +2041,9 @@ ol {
 }
 
 @media (max-width: 767px) {
+  .about-area{
+    padding-top: 5%!important;
+  }
   .header-area {
     padding: 20px 0;
   }
