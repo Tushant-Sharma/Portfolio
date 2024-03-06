@@ -1,4 +1,4 @@
-import { Dribbble, Instagram, Mail, PhoneCall, Twitter } from "lucide-react"
+import { Instagram, Linkedin, Mail, Phone, Twitter } from "../utils/svgs"
 
 const Contact: React.FC = () => {
     return (
@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
                             <ul className="contact-details">
                                 <li className="d-flex align-items-center aos-init aos-animate" data-aos="zoom-in">
                                     <div className="icon-box shadow-box">
-                                        <Mail className="iconoir-mail"></Mail>
+                                        <Mail />
                                     </div>
                                     <div className="right">
                                         <span>MAIL us</span>
@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
 
                                 <li className="d-flex align-items-center aos-init aos-animate" data-aos="zoom-in">
                                     <div className="icon-box shadow-box">
-                                    <PhoneCall className="iconoir-phone"></PhoneCall>
+                                    <Phone className="iconoir-phone"></Phone>
                                     </div>
                                     <div className="right">
                                         <span>Contact Us</span>
@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
 
                             <h3 data-aos="fade-up" className="aos-init aos-animate">Social Info</h3>
                             <ul className="social-links d-flex align-center aos-init aos-animate" data-aos="zoom-in">
-                                <li><a className="shadow-box" href="#"><Dribbble className="iconoir-dribbble"></Dribbble></a></li>
+                                <li><a className="shadow-box" href="#"><Linkedin className="iconoir-dribbble"></Linkedin></a></li>
                                 <li><a className="shadow-box" href="#"><Twitter className="iconoir-twitter"></Twitter></a></li>
                                 <li><a className="shadow-box" href="#"><Instagram className="iconoir-instagram"></Instagram></a></li>
                             </ul>

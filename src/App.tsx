@@ -5,6 +5,7 @@ import { Suspense, useEffect } from "react"
 import { Route, Routes } from "react-router-dom"
 import { ScrollToTop, publicRoutes } from "./components/routers"
 import { HomeLayout } from "./components/pagelayout"
+import { LoadingSpinner } from "./utils/svgs"
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <Suspense>
+      <Suspense fallback={<LoadingSpinner />}>
         <Routes>
           <Route path="/" element={<HomeLayout />}>
             {

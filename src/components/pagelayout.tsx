@@ -1,4 +1,3 @@
-import { ArrowLeft } from "lucide-react";
 import React, { useState } from "react"
 import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom"
 const Header = () => {
@@ -24,7 +23,6 @@ const Header = () => {
     const location = useLocation()
     const canGoBack = window.history.length > 1 && location.pathname != '/';
 
-    console.log(canGoBack, location.pathname)
 
     return (
         <>
@@ -33,9 +31,9 @@ const Header = () => {
                     <div className="gx-row d-flex align-items-center justify-content-between">
                         <div className="logo" style={navLogo}>
                             {
-                                canGoBack && location.pathname !== '/home' ? <><span style={{ color: "#fff",cursor:"pointer", marginTop: "-9px", textDecoration: "overline" }} onClick={() => { goBack(-1) }} >
+                                canGoBack && location.pathname !== '/home' ? <><span style={{ color: "#fff", cursor: "pointer", marginTop: "-15px", textDecoration: "overline" }} onClick={() => { goBack(-1) }} >
 
-                                    <ArrowLeft />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
                                 </span>
                                 </> : <></>
                             }

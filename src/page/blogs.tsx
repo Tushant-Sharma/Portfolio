@@ -41,7 +41,7 @@ const Blogs = () => {
                 <div className="container">
                     <div className="breadcrumb-content aos-init aos-animate" data-aos="fade-up">
                         <p>HOME - BLOGS</p>
-                        <h1 className="section-heading"><img src="images/star-2.png" alt="Star" /> Latest Blogs <img src="/images/star-2.png" alt="Star" /></h1>
+                        <h1 className="section-heading"><img src="/images/star-2.png" alt="Star" /> Latest Blogs <img src="/images/star-2.png" alt="Star" /></h1>
                     </div>
                 </div>
             </section>

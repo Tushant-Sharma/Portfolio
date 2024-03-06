@@ -42,7 +42,7 @@ const Blog: React.FC = () => {
                     : <section className="projects-area">
                     <div className="container">
                         <h1 className="section-heading aos-init aos-animate " data-aos="fade-up">
-                            <img src="images/star-2.png" alt="Star" />404 Page Not Found<img src="images/star-2.png" alt="Star" />
+                            <img src="/images/star-2.png" alt="Star" />404 Page Not Found<img src="images/star-2.png" alt="Star" />
                         </h1>
                         <div className="row">
                             <div className="col-12">
@@ -51,7 +51,7 @@ const Blog: React.FC = () => {
                                     <div className="infos"><h1>{title?title:"Blog"} is Not  Found </h1>
                                         <Link to="/blogs">Go Back</Link>
                                         <Link className="about-btn" to="/">
-                                            <img src="../images/icon.svg" alt="Button" /></Link>
+                                            <img src="/images/icon.svg" alt="Button" /></Link>
                                     </div>
                                 </div>
                             </div>

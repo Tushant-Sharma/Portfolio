@@ -1,6 +1,6 @@
-import { AlignCenter, Boxes, Computer, Github, Globe2Icon, Linkedin } from "lucide-react"
 import { Link } from "react-router-dom"
 import { socialLinks } from "../utils/usefulllink"
+import { AlignCenter, Boxes, Computer, Github, Glob, Linkedin } from "../utils/svgs"
 
 const Service: React.FC = () => {
     return (
@@ -16,7 +16,7 @@ const Service: React.FC = () => {
                                 <div className="service-sidebar-inner shadow-box">
                                     <ul>
                                         <li>
-                                            <Globe2Icon className="iconoir-camera icon" />
+                                            <Glob className="iconoir-camera icon" />
                                             FULL STACK DEVELOPMENT
                                         </li>
                                         <li>

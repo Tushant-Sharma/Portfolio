@@ -718,7 +718,7 @@ ol {
 }
 
 .about-area .about-image-box .image-inner {
-  background:linear-gradient(90deg, #262626 -15%, #abb5bb 58%, #191919 97%);
+  background: linear-gradient(90deg, #262626 -15%, #abb5bb 58%, #191919 97%);
   border-radius: 30px;
 }
 
@@ -2041,9 +2041,10 @@ ol {
 }
 
 @media (max-width: 767px) {
-  .about-area{
-    padding-top: 5%!important;
+  .about-area {
+    padding-top: 5% !important;
   }
+
   .header-area {
     padding: 20px 0;
   }
@@ -2391,4 +2392,25 @@ ol {
   border: solid 2px white;
   border-radius: 50%;
   padding: 8px;
+}
+
+.spinner {
+  animation: rotate 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  width: 50px;
+  height: 50px;
+
+
+}
+
+.spinner {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }

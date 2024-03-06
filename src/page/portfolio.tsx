@@ -1,6 +1,6 @@
-import { Github, Linkedin, Mail, PhoneCall } from "lucide-react"
 import { Link } from "react-router-dom"
 import { socialLinks } from "../utils/usefulllink"
+import { Github, Linkedin, Mail, Phone } from "../utils/svgs"
 
 const Portfolio: React.FC = () => {
     return (
@@ -26,7 +26,7 @@ const Portfolio: React.FC = () => {
                                         <li><a target="_blank" href={socialLinks.github}><Github className="iconoir-dribbble" /></a></li>
                                         <li><a href={socialLinks.email}><Mail className="iconoir-facebook-tag" /></a></li>
                                         <li><a target="_blank" href={socialLinks.linkedIn}><Linkedin className="iconoir-instagram" /></a></li>
-                                        <li><a target="_blank" href={socialLinks.whatsapp}><PhoneCall className="iconoir-twitter" /></a></li>
+                                        <li><a target="_blank" href={socialLinks.whatsapp}><Phone className="iconoir-twitter" /></a></li>
                                     </ul>
 
                                     <Link to={socialLinks.email} className="theme-btn">Contact Me</Link>
