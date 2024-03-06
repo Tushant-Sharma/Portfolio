@@ -6,6 +6,7 @@ import { Portfolio } from "../page/portfolio";
 import { Service } from "../page/service";
 import { CommingSoon } from "../page/wait";
 import { useEffect } from "react";
+import { Blogs } from "../page/blogs";
 import { Blog } from "../page/blog";
 
 interface IPublicRoutes {
@@ -51,11 +52,16 @@ const publicRoutes: IPublicRoutes[] = [
         element: <Service />,
         title: "Service"
     },
-    // {
-    //     path: "blog",
-    //     element: <Blog />,
-    //     title: "Blog"
-    // },
+    {
+        path: "blog/:title",
+        element: <Blog />,
+        title: "Blog"
+    },
+    {
+        path: "blogs",
+        element: <Blogs />,
+        title: "Blog"
+    },
     {
         path: "*",
         element: <CommingSoon />,

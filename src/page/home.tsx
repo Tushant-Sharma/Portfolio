@@ -92,7 +92,7 @@ const Home = () => {
                     <div className="blog-service-profile-wrap d-flex gap-24">
                         <div data-aos="zoom-in" className="aos-init aos-animate">
                             <div className="about-blog-box info-box shadow-box h-full">
-                                <Link to="/blog" className="overlay-link"></Link>
+                                <Link to="/blogs" className="overlay-link"></Link>
                                 <img src="images/bg1.png" alt="BG" className="bg-img" />
                                 <img src="images/gfonts.png" alt="GFonts" />
                                 <div className="d-flex align-items-center justify-content-between">
@@ -101,7 +101,7 @@ const Home = () => {
                                         <h1>GFonts</h1>
                                     </div>
 
-                                    <Link to="/blog" className="about-btn">
+                                    <Link to="/blogs" className="about-btn">
                                         <img src="images/icon.svg" alt="Button" />
                                     </Link>
 
