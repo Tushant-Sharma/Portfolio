@@ -18,6 +18,7 @@ const Header = () => {
     };
     useEffect(() => {
         window.addEventListener('scroll', checkScrollDirection);
+        
         // return () => window.removeEventListener('scroll', checkScrollDirection);
     }, [scrollPosition]);
 
@@ -45,7 +46,7 @@ const Header = () => {
 
     return (
         <>
-            <div className={`header-area ${scrollDirection === 'up' ? 'show' : 'hide'}`}>
+            <div  className={`header-area ${scrollDirection === 'up' ? 'show' : 'hide'}`}>
                 <div className="container">
                     <div className="gx-row d-flex align-items-center justify-content-between">
                         <div className="logo" style={navLogo}>
