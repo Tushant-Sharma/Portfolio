@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, Phone } from "../utils/svgs"
 const Portfolio: React.FC = () => {
     return (
         <>
-            <section className="credential-area">
+            <section className="credential-area fadeIn">
                 <div className="container">
                     <div className="gx-row d-flex">
                         <div className="credential-sidebar-wrap aos-init aos-animate" data-aos="zoom-in">
@@ -29,7 +29,7 @@ const Portfolio: React.FC = () => {
                                         <li><a target="_blank" href={socialLinks.whatsapp}><Phone className="iconoir-twitter" /></a></li>
                                     </ul>
 
-                                    <Link to={socialLinks.email} className="theme-btn">Contact Me</Link>
+                                    <Link to={socialLinks.whatsapp} className="theme-btn">Contact Me</Link>
                                 </div>
                             </div>
                         </div>

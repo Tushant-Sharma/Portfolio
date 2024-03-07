@@ -3,7 +3,7 @@ import { Instagram, Linkedin, Mail, Phone, Twitter } from "../utils/svgs"
 const Contact: React.FC = () => {
     return (
         <>
-            <section className="contact-area">
+            <section className="contact-area fadeIn">
                 <div className="container">
                     <div className="gx-row d-flex justify-content-between gap-24">
                         <div className="contact-infos">

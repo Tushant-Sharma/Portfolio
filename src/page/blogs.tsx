@@ -37,15 +37,14 @@ const Blogs = () => {
 
     return (
         <>
-            <section className="breadcrumb-area" style={{ paddingTop: "0%" }}>
+            <section className="breadcrumb-area fadeIn" style={{ paddingTop: "0%" }}>
                 <div className="container">
                     <div className="breadcrumb-content aos-init aos-animate" data-aos="fade-up">
-                        <p>HOME - BLOGS</p>
                         <h1 className="section-heading"><img src="/images/star-2.png" alt="Star" /> Latest Blogs <img src="/images/star-2.png" alt="Star" /></h1>
                     </div>
                 </div>
             </section>
-            <section className="blog-area" style={{ paddingTop: "4%" }}>
+            <section className="blog-area fadeIn" style={{ paddingTop: "4%" }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -53,9 +52,9 @@ const Blogs = () => {
                                 {
                                     blogsJson?.map((json) => {
                                         return (
-                                            <div key={json.sha} className="blog-item aos-init aos-animate" data-aos="zoom-in">
+                                            <div key={json.sha} className="fadeIn blog-item aos-init aos-animate" data-aos="zoom-in">
                                                 <div className="content shadow-box" style={{padding:"46px 30px 62px 30px"}}>
-                                                    <span className="meta">25 March 2022 </span>
+                                                    <span className="meta">25 March 2024 </span>
                                                     <h1><Link to={"/blog/" + json.name.replace(".md", "")}>{json.name.replace(".md", "")}.</Link></h1>
                                                     <Link to={"/blog/" + json.name.replace(".md", "")} className="theme-btn">Read More</Link>
                                                 </div>

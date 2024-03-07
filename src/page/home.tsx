@@ -4,7 +4,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="row">
+            <div className="row fadeIn">
                 <div className="col-md-6 aos-init aos-animate" data-aos="zoom-in">
                     <div className="about-me-box shadow-box">
                         <Link className="overlay-link" to="/about"></Link>
@@ -23,7 +23,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="col-md-6">
+                <div className="fadeIn col-md-6">
                     <div className="about-credentials-wrap">
                         <div data-aos="zoom-in" className="aos-init aos-animate">
                             <div className="banner shadow-box">
@@ -86,7 +86,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="row mt-24">
+            <div className="fadeIn row mt-24">
                 <div className="col-md-12">
                     <div className="blog-service-profile-wrap d-flex gap-24">
                         <div data-aos="zoom-in" className="aos-init aos-animate">
@@ -96,8 +96,8 @@ const Home = () => {
                                 <img src="images/gfonts.png" alt="GFonts" />
                                 <div className="d-flex align-items-center justify-content-between">
                                     <div className="infos">
-                                        <h4>Blog</h4>
-                                        <h1>GFonts</h1>
+                                        <h4>Latest</h4>
+                                        <h1>Blogs</h1>
                                     </div>
 
                                     <Link to="/blogs" className="about-btn">
@@ -161,7 +161,7 @@ const Home = () => {
 
             </div>
 
-            <div className="row mt-24">
+            <div className="fadeIn row mt-24">
                 <div className="col-md-6 aos-init aos-animate" data-aos="zoom-in">
                     <div className="about-client-box info-box shadow-box">
                         <img src="images/bg1.png" alt="BG" className="bg-img" />

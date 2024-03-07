@@ -1,5 +1,6 @@
-import React, { useState } from "react"
+import React, { Suspense, useState } from "react"
 import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom"
+import { LoadingSpinner } from "../utils/svgs";
 const Header = () => {
 
     const [nav, setNav] = useState<boolean>(false);
@@ -48,7 +49,7 @@ const Header = () => {
                             <ul className="menu">
                                 <li><NavLink onClick={hideNavBar} className={({ isActive }) => (isActive ? 'active' : '')} to="home">Home</NavLink></li>
                                 <li><NavLink onClick={hideNavBar} className={({ isActive }) => (isActive ? 'active' : '')} to="about">About</NavLink></li>
-                                <li><NavLink onClick={hideNavBar} className={({ isActive }) => (isActive ? 'active' : '')} to="project">Work</NavLink></li>
+                                <li><NavLink onClick={hideNavBar} className={({ isActive }) => (isActive ? 'active' : '')} to="blogs">Blogs</NavLink></li>
                                 <li><NavLink onClick={hideNavBar} className={({ isActive }) => (isActive ? 'active' : '')} to="contact">Contact</NavLink></li>
                             </ul>
                             <Link to="contact" onClick={showNavBar} className="theme-btn">Let's talk</Link>
@@ -78,7 +79,7 @@ const Footer = () => {
                     <ul className="footer-menu">
                         <li><Link to="home">Home</Link></li>
                         <li><Link to="about">About </Link></li>
-                        <li><Link to="work">Work</Link></li>
+                        <li><Link to="blogs">Blogs</Link></li>
                         <li><Link to="contact">Contact</Link></li>
                     </ul>
                     <p className="copyright">
@@ -96,8 +97,10 @@ const HomeLayout: React.FC = () => {
         <>
             <Header />
             <section className="about-area">
-                <div className="container">
-                    <Outlet />
+                <div className="container ">
+                    <Suspense fallback={<LoadingSpinner />}>
+                        <Outlet />
+                    </Suspense>
                 </div>
             </section>
             <Footer />

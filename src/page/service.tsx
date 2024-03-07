@@ -5,7 +5,7 @@ import { AlignCenter, Boxes, Computer, Github, Glob, Linkedin } from "../utils/s
 const Service: React.FC = () => {
     return (
         <>
-            <section className="service-area">
+            <section className="service-area fadeIn">
                 <div className="container">
                     <h1 className="section-heading aos-init aos-animate" data-aos="fade-up"><img src="images/star-2.png" alt="Star" /> My Offerings <img src="images/star-2.png" alt="Star" /></h1>
 
