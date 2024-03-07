@@ -1,7 +1,25 @@
-import React, { Suspense, useState } from "react"
+import React, { Suspense, useEffect, useState } from "react"
 import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom"
 import { LoadingSpinner } from "../utils/svgs";
 const Header = () => {
+
+
+    const [scrollDirection, setScrollDirection] = useState('down');
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    const checkScrollDirection = () => {
+        const currentScrollPosition = window.pageYOffset;
+        if (currentScrollPosition > scrollPosition) {
+            setScrollDirection('down');
+        } else {
+            setScrollDirection('up');
+        }
+        setScrollPosition(currentScrollPosition);
+    };
+    useEffect(() => {
+        window.addEventListener('scroll', checkScrollDirection);
+        // return () => window.removeEventListener('scroll', checkScrollDirection);
+    }, [scrollPosition]);
 
     const [nav, setNav] = useState<boolean>(false);
 
@@ -27,12 +45,12 @@ const Header = () => {
 
     return (
         <>
-            <div className="header-area">
+            <div className={`header-area ${scrollDirection === 'up' ? 'show' : 'hide'}`}>
                 <div className="container">
                     <div className="gx-row d-flex align-items-center justify-content-between">
                         <div className="logo" style={navLogo}>
                             {
-                                canGoBack && location.pathname !== '/home' ? <><span style={{ color: "#fff", cursor: "pointer", marginTop: "-15px", textDecoration: "overline" }} onClick={() => { goBack(-1) }} >
+                                canGoBack && location.pathname !== '/home' ? <><span style={{ color: "#fff", cursor: "pointer", marginTop: "-10px", textDecoration: "overline" }} onClick={() => { goBack(-1) }} >
 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
                                 </span>
