@@ -2391,6 +2391,7 @@ ol {
   border: solid 2px white;
   border-radius: 50%;
   padding: 8px;
+margin: 0!important;
 }
 
 .fadeIn {

@@ -159,10 +159,16 @@ const Portfolio: React.FC = () => {
 
                                 </div>
                             </div>
-                        </div>
+                            <div className="skills-wrap awards-wrap">
+                                <Link target="_blank" to={socialLinks.resume} style={{ width:"-webkit-fill-available",textAlign:"center"}} className="theme-btn"> Resume Download (pdf)</Link>
+                            </div>
+
+
+
                     </div>
                 </div>
-            </section>
+            </div>
+        </section >
         </>
     )
 }

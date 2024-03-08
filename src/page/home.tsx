@@ -15,7 +15,7 @@ const Home = () => {
                         <div className="infos">
                             <h4>A WEB DESIGNER</h4>
                             <h1>Tushant .Sharma</h1>
-                            <p>I am a Web Designer based in India.</p>
+                            <p>I'm a Full-Stack Web Developer Based in India.</p>
                             <Link to="/#" className="about-btn">
                                 <img src="images/icon.svg" alt="Button" />
                             </Link>

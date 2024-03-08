@@ -12,6 +12,7 @@ const Blog = lazy(() => import("../page/blog").then(module => ({ default: module
 const Portfolio = lazy(() => import("../page/portfolio").then(module => ({ default: module.Portfolio })))
 
 import { CommingSoon } from "../page/wait";
+import { Projects } from "../page/project";
 // import { Aboutme } from "../page/about";
 // import { Contact } from "../page/contact";
 // import { Portfolio } from "../page/portfolio";
@@ -78,6 +79,11 @@ const publicRoutes: IPublicRoutes[] = [
         path: "blogs",
         element: <Blogs />,
         title: "Blog"
+    },
+    {
+        path: "projects",
+        element: <Projects />,
+        title: "project"
     },
     {
         path: "*",
