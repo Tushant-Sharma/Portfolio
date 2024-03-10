@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ProjectCard } from "../components/project_card"
 
 const Projects = () => {
@@ -107,6 +107,8 @@ const Projects = () => {
         default_branch: string,
     }
 
+    const [repo, setRepo] = useState<IGithubRepo[] | null>()
+
     const getRep = async () => {
         return await fetch("https://api.github.com/users/tushant-sharma/repos")
             .then(res => res.json())
@@ -120,6 +122,7 @@ const Projects = () => {
     useEffect(() => {
         (async function running() {
             const a = await getRep()
+            setRepo(a)
             console.log(a)
         })();
     }, [])
@@ -136,7 +139,13 @@ const Projects = () => {
                                 <img src="images/star-2.png" alt="Star" />
                             </h1>
                             <div className="d-flex gap-24">
-                                {/* <ProjectCard /> */}
+                                {
+                                    repo && repo.map((data) => {
+                                        return (
+                                            <ProjectCard title={data.name} key={data.node_id} date={data.created_at} url={data.html_url} img_url={data.archive_url} />
+                                        )
+                                    })
+                                }
                             </div>
                         </div>
                     </div>

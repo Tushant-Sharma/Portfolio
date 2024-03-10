@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { ImageDemoIcon } from "../utils/svgs"
 
 interface IProjectCard {
     title: string,
@@ -13,19 +12,19 @@ const ProjectCard = (props: React.PropsWithChildren<IProjectCard>) => {
         <>
             <div data-aos="zoom-in" className="flex-1 aos-init aos-animate">
                 <div className="project-item shadow-box">
-                    <Link to={props.url} className="overlay-link" ></Link>
+                    <Link  target="_blank" to={props.url} className="overlay-link" ></Link>
                     <img src="/images/bg1.png" alt="BG" className="bg-img" />
                     <div className="project-img">
                         {
-                            props.img_url ?
-                                <img src={props.img_url} alt="Project" />
-                                :
-                                <ImageDemoIcon />
+                            <img src="/images/project5.jpg" alt="Project" />
+                            // props.img_url ?
+                            //     :
+                            //     <ImageDemoIcon />
                         }
                     </div>
                     <div className="d-flex align-items-center justify-content-between">
                         <div className="project-info">
-                            <p>{props.date.toDateString()}</p>
+                            <p>{new Date(props.date).toDateString()}</p>
                             <h1>{props.title}</h1>
                         </div>
                         <Link to={props.url} className="project-btn">
