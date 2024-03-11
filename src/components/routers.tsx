@@ -13,6 +13,7 @@ const Portfolio = lazy(() => import("../page/portfolio").then(module => ({ defau
 
 import { CommingSoon } from "../page/wait";
 import { Projects } from "../page/project";
+import { socialLinks } from "../utils/usefulllink";
 
 // function delayForDemo(promise: any) {
 //     return new Promise(resolve => {
@@ -92,7 +93,7 @@ const publicRoutes: IPublicRoutes[] = [
     },
     {
         path: "resume",
-        element: <RedirectTo href="/pdf/Resume_Tushant_Sharma_2024.pdf" />,
+        element: <RedirectTo href={socialLinks.resume} />,
         title: "Redirecting to Resume.."
     },
     {
