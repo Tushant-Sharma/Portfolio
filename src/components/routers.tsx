@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { lazy, useEffect } from "react";
+import React, { lazy, useEffect } from "react";
 
 //pages
 import { Home } from "../page/home";
@@ -13,12 +13,6 @@ const Portfolio = lazy(() => import("../page/portfolio").then(module => ({ defau
 
 import { CommingSoon } from "../page/wait";
 import { Projects } from "../page/project";
-// import { Aboutme } from "../page/about";
-// import { Contact } from "../page/contact";
-// import { Portfolio } from "../page/portfolio";
-// import { Service } from "../page/service";
-// import { Blogs } from "../page/blogs";
-// import { Blog } from "../page/blog";
 
 // function delayForDemo(promise: any) {
 //     return new Promise(resolve => {
@@ -26,6 +20,17 @@ import { Projects } from "../page/project";
 //     }).then(() => promise);
 // }
 
+
+const RedirectTo = (props: React.PropsWithChildren<{ href: string }>) => {
+    useEffect(() => {
+        window.location.href = props.href;
+    }, [])
+    return (
+        <>
+            <h1>Redirecting.....</h1>
+        </>
+    )
+}
 
 interface IPublicRoutes {
     path: string,
@@ -86,6 +91,11 @@ const publicRoutes: IPublicRoutes[] = [
         title: "project"
     },
     {
+        path: "resume",
+        element: <RedirectTo href="/pdf/Resume_Tushant_Sharma_2024.pdf" />,
+        title: "Redirecting to Resume.."
+    },
+    {
         path: "*",
         element: <CommingSoon />,
         title: "Error 404"
@@ -103,4 +113,9 @@ const ScrollToTop = () => {
 };
 
 
+
 export { publicRoutes, ScrollToTop }
+
+
+
+
