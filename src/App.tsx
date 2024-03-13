@@ -6,12 +6,8 @@ import { LoadingSpinner } from "./utils/svgs"
 // import "../src/assets/css/bootstrap.min.css"
 // import '../src/index.css'
 // import { HomeLayout } from "./components/pagelayout"
-const HomeLayout = lazy(async () => await delayForDemo(import("./components/pagelayout").then(model => ({ default: model.HomeLayout }))))
-function delayForDemo(promise: any) {
-  return new Promise(resolve => {
-    setTimeout(resolve, 200000);
-  }).then(() => promise);
-}
+const HomeLayout = lazy(async () => import("./components/pagelayout").then(model => ({ default: model.HomeLayout })))
+
 
 function App() {
   useEffect(() => {
