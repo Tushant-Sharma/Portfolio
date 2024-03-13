@@ -20,7 +20,7 @@ function App() {
     <>
       <ScrollToTop />
       <Suspense fallback={
-        <div style={{ backgroundColor: "#0f0f0f", height: "80vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ position: "absolute", top: "0", bottom: "0", right: "0", left: "0", backgroundColor: "#0f0f0f", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
 
           <LoadingSpinner  ></LoadingSpinner>
         </div>
