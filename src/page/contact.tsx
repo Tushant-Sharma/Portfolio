@@ -1,5 +1,8 @@
 import { Instagram, Linkedin, Mail, Phone, Twitter } from "../utils/svgs"
 
+//https://script.google.com/macros/s/AKfycby4d8yJiDzUbm1cy0U4JCJ2wwF93wJ7f8HioOxrN96QsrYpHCJIgiH2uHwAUhHS2gwDmQ/exec
+//AKfycby4d8yJiDzUbm1cy0U4JCJ2wwF93wJ7f8HioOxrN96QsrYpHCJIgiH2uHwAUhHS2gwDmQ
+
 const Contact: React.FC = () => {
     return (
         <>

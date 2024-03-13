@@ -1,20 +1,35 @@
 // import "bootstrap/scss/bootstrap.scss"
-import "../src/assets/css/bootstrap.min.css"
-import './index.css'
-import { Suspense, useEffect } from "react"
+import { Suspense, lazy, useEffect } from "react"
 import { Route, Routes } from "react-router-dom"
 import { ScrollToTop, publicRoutes } from "./components/routers"
-import { HomeLayout } from "./components/pagelayout"
+import { LoadingSpinner } from "./utils/svgs"
+// import "../src/assets/css/bootstrap.min.css"
+// import '../src/index.css'
+// import { HomeLayout } from "./components/pagelayout"
+const HomeLayout = lazy(async () => await delayForDemo(import("./components/pagelayout").then(model => ({ default: model.HomeLayout }))))
+function delayForDemo(promise: any) {
+  return new Promise(resolve => {
+    setTimeout(resolve, 200000);
+  }).then(() => promise);
+}
 
 function App() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
+
+
   return (
     <>
-      <Suspense fallback={<h1>loading...</h1>}>
-        <ScrollToTop />
+      <ScrollToTop />
+      <Suspense fallback={
+        <div style={{ backgroundColor: "#0f0f0f", height: "80vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
+
+          <LoadingSpinner  ></LoadingSpinner>
+        </div>
+
+      }>
         <Routes>
           <Route path="/" element={<HomeLayout />}>
             {
@@ -25,7 +40,7 @@ function App() {
               ))
             }
           </Route>
-        </Routes>
+        </Routes >
       </Suspense>
 
     </>

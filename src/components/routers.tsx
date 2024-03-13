@@ -2,7 +2,8 @@ import { useLocation } from "react-router-dom";
 import React, { lazy, useEffect } from "react";
 
 //pages
-import { Home } from "../page/home";
+const Home = lazy(async () => await delayForDemo(import("../page/home").then(model => ({ default: model.Home }))))
+// import { Home } from "../page/home";
 
 const Aboutme = lazy(() => import("../page/about"))
 const Contact = lazy(() => import("../page/contact").then(module => ({ default: module.Contact })))
@@ -15,11 +16,11 @@ import { CommingSoon } from "../page/wait";
 import { Projects } from "../page/project";
 import { socialLinks } from "../utils/usefulllink";
 
-// function delayForDemo(promise: any) {
-//     return new Promise(resolve => {
-//         setTimeout(resolve, 2000);
-//     }).then(() => promise);
-// }
+function delayForDemo(promise: any) {
+    return new Promise(resolve => {
+        setTimeout(resolve, 10000);
+    }).then(() => promise);
+}
 
 
 const RedirectTo = (props: React.PropsWithChildren<{ href: string }>) => {
@@ -38,6 +39,7 @@ interface IPublicRoutes {
     element: JSX.Element,
     title: string,
     description?: string,
+
 }
 
 const publicRoutes: IPublicRoutes[] = [

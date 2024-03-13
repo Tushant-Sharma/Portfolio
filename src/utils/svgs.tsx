@@ -61,9 +61,31 @@ const Computer = (className: React.SVGAttributes<SVGSVGElement>) => {
 }
 
 const LoadingSpinner = () => {
+    const loder_css: React.CSSProperties = {
+        width: "48px",
+        height: "48px",
+        borderRadius: "50%",
+        display: " inline-block",
+        borderTop: "3px solid #FFF",
+        borderRight: "3px solid transparent",
+        boxSizing: "border-box",
+        animation: "rotation 0.8s linear infinite",
+    }
+
+    
+
+
+    const spinner_div_css: React.CSSProperties = {
+        width: "-webkit-fill-available",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+
+    }
+
     return (
-        <div className="spinner-div">
-            <span className="loader"></span>
+        <div className="spinner-div" style={spinner_div_css}>
+            <span className="loader" style={loder_css}></span>
         </div>
     )
 }

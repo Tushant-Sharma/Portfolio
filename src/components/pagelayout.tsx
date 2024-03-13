@@ -2,6 +2,8 @@ import React, { Suspense, useEffect, useState } from "react"
 import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom"
 import { LoadingSpinner } from "../utils/svgs";
 import { socialLinks } from "../utils/usefulllink";
+import "../assets/css/bootstrap.min.css"
+import '../index.css'
 // import resume_pdf from "../../pdf/Resume_Tushant_Sharma_2024.pdf";
 
 const Header = () => {
@@ -122,6 +124,7 @@ const Footer = () => {
 
 
 const HomeLayout: React.FC = () => {
+
     return (
         <>
             <Header />
